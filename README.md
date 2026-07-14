@@ -4,17 +4,15 @@ Official Homebrew Tap for PPHLX tools.
 
 ## Installation
 
-To add this tap to your Homebrew installation:
+To install PPHLX on macOS using Homebrew, run the following commands:
+
 ```bash
+# Add the custom tap
 brew tap pphlx/tap
-```
 
-## Available Formulae
+# Trust the custom tap (required by Homebrew security policies for custom taps)
+brew trust pphlx/tap
 
-### PPHLX Compiler
-High-performance component compiler that compiles modern web components to pure PHP.
-
-To install:
-```bash
+# Install the compiler
 brew install pphlx
 ```
