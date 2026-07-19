@@ -1,24 +1,24 @@
 class Pphlx < Formula
   desc "High-performance component compiler that compiles modern web components to pure PHP"
   homepage "https://pphlx.org"
-  version "1.0.4"
+  version "1.0.6"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.0.4/pphlx-darwin-arm64.tar.gz"
-      sha256 "4880e386fb1fe5860a92170136cc5d56b81b32cc1c4af3e93fa3cda3444358d6"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.0.6/pphlx-darwin-arm64.tar.gz"
+      sha256 "21a99d84267a01f6b8639532f4b69089009271008b87a3f4e7f4f67d8f85c88d"
     else
-      url "https://github.com/pphlx/pphlx/releases/download/v1.0.4/pphlx-darwin-amd64.tar.gz"
-      sha256 "68341a2d2243da3beb05625a094452e827b6e84e79825061f4bb0cb80d340862"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.0.6/pphlx-darwin-amd64.tar.gz"
+      sha256 "849ce2a231f262cf56a70df694217cbd79faaf35c2d90f2f9e54cc515d276cc7"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.0.4/pphlx-linux-arm64.tar.gz"
-      sha256 "0fe2eff78009715b3fce7d78a1d0e0b21f5cf54492e751609da023c332ed7c79"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.0.6/pphlx-linux-arm64.tar.gz"
+      sha256 "876b5a9b25695711ae5bce6b2445b7f1e81467320b5d7b3f1b291500c4da7d08"
     else
-      url "https://github.com/pphlx/pphlx/releases/download/v1.0.4/pphlx-linux-amd64.tar.gz"
-      sha256 "ceb2a937b1e9eb680df04d837ee661c09ea425d4166a8e803eba34750adbaae7"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.0.6/pphlx-linux-amd64.tar.gz"
+      sha256 "0273c4a6ff7e24F3E202abe1c188f578d2eb64f60379e3c7642a45827469b2b6"
     end
   end
 
