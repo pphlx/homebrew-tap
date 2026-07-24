@@ -1,43 +1,43 @@
 class Pphlx < Formula
   desc "PPHLX Compiler CLI for PHP Component-Driven Full-Stack Web Development"
-  homepage "https://pphlx.dev"
-  version "1.1.0"
+  homepage "https://pphlx.org"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.0/pphlx-darwin-arm64.tar.gz"
-      sha256 "66fe53524f0a3f3f5c5551c0e059a74ad0879192c63c969a224ad9259218c1af"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.1/pphlx-darwin-arm64.tar.gz"
+      sha256 "a056037d6e8b246ae184eb6ce0dc1869299e23326a7be489e472423677dcfcdf"
 
       def install
-        bin.install "pphlx-macos-arm64" => "pphlx"
+        bin.install "pphlx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.0/pphlx-darwin-amd64.tar.gz"
-      sha256 "13173a68a36c8ef379398649f60b9335898f0f04f342f6cb07a7c24b0d6279c5"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.1/pphlx-darwin-amd64.tar.gz"
+      sha256 "10ea4769b8d83c65decbb0d38f953c0a9c2cb9c25d33238c68f351cc3d942cb3"
 
       def install
-        bin.install "pphlx-macos-amd64" => "pphlx"
+        bin.install "pphlx"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.0/pphlx-linux-arm64.tar.gz"
-      sha256 "58956587a0c978c6fbf44c27f3a11377d9cbba88731ca84926524ec872bc92a6"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.1/pphlx-linux-arm64.tar.gz"
+      sha256 "341ee69cdb0e14a841706b513353276441fde35686c5ccb3a7b455fe93d0c6a1"
 
       def install
-        bin.install "pphlx-linux-arm64" => "pphlx"
+        bin.install "pphlx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.0/pphlx-linux-amd64.tar.gz"
-      sha256 "d2886f718250ca6f63223c7a59ab13f582913337c35dfe67a52d14f1c5ce390b"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.1/pphlx-linux-amd64.tar.gz"
+      sha256 "3646211f18c570b5db1458588e97fdde665fb85d49e5d509c77da7a39afde359"
 
       def install
-        bin.install "pphlx-linux-amd64" => "pphlx"
+        bin.install "pphlx"
       end
     end
   end

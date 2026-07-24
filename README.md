@@ -1,5 +1,15 @@
 # PPHLX Homebrew Tap
 
+<br/>
+<p align="center">
+  <img src=".github/assets/banner.webp" alt="Bring Your Own UI Framework">
+  <br/><br/>
+  <a href="https://pphlx.org">PPHLX</a> is the high-performance monolithic compiler for modern PHP web applications.
+  <br/>
+  Build component-driven PHP apps with React, Vue, Svelte, or pure PHP templates — with zero Node.js runtime in production.
+  <br/><br/>
+</p>
+
 Official Homebrew Tap for PPHLX tools.
 
 ## Installation
