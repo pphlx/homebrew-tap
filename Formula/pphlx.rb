@@ -1,21 +1,21 @@
 class Pphlx < Formula
   desc "PPHLX Compiler CLI for PHP Component-Driven Full-Stack Web Development"
   homepage "https://pphlx.org"
-  version "1.1.4"
+  version "1.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.4/pphlx-darwin-arm64.tar.gz"
-      sha256 "2f3b304c0e3f685f51037cdba3b6ab56b02edc00f962f02356a8ab3e51d80b82"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.5/pphlx-darwin-arm64.tar.gz"
+      sha256 "c167f09db07c1b2002e507712a344df512f76d39d82eb49d4801183b4febea75"
 
       def install
         bin.install "pphlx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.4/pphlx-darwin-amd64.tar.gz"
-      sha256 "ca1319746b906d88bd1d97cf41d78796a49b8e575993abcb56cb397e9b30098a"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.5/pphlx-darwin-amd64.tar.gz"
+      sha256 "aeb52f4d4c5f2f73c15c6d1c8fffbcc8e8d1d9b3c7a32e329d5d581a0ba5d6b2"
 
       def install
         bin.install "pphlx"
@@ -25,16 +25,16 @@ class Pphlx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.4/pphlx-linux-arm64.tar.gz"
-      sha256 "f4a3e68d0b72cf513e2c49712347bf820420c67a304b88039bb16e02b1a41eeb"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.5/pphlx-linux-arm64.tar.gz"
+      sha256 "8b54fdf4f335a9296bd7f9fd5a73f2c6ad4d3e8ff3d3bf4848d220416c51323c"
 
       def install
         bin.install "pphlx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pphlx/pphlx/releases/download/v1.1.4/pphlx-linux-amd64.tar.gz"
-      sha256 "de2430c1bf194fff8c899451997dfcc8272aa040b18d927f12ff20e7289075a9"
+      url "https://github.com/pphlx/pphlx/releases/download/v1.1.5/pphlx-linux-amd64.tar.gz"
+      sha256 "b93981dab184ee8050f13b190bd436b205d19c4e936750ced8102341d692de6d"
       def install
         bin.install "pphlx"
       end
